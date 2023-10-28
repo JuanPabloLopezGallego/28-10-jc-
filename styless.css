@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --first-color: #4E1116;
+  --black-color: #000;
+  --white-color: #FFF;
+}
+
+/*Fuente y tipografia*/
+:root {
+  --body-font: 'Poppins', sans-serif;
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1rem;
+  --normal-font-size: 0.93rem;
+  --small-font-size: 0.81rem;
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --h1-font-size: 4.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 1.37rem;
+  }
+}
+
+/*----- BASE -----*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: var(--body-font);
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: 700;
+  overflow: hidden;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.header{
+  display: flex;
+  height: 5%;
+  position: relative;
+  margin-top: -30px;
+  justify-content: space-around;
+}
+.header__titulo{
+  margin-left: 0px;
+  margin-top: 10px;
+}
+.header__enlace{
+  margin-top: 20px;
+  color: #FFF;
+}
+
+.divEnlace{
+  display: flex;
+  margin-top: -150px;
+  margin-left: 6.5%;
+}
+.divEnlace__enlace {
+  margin-left: 5px;
+  max-width: 100%;
+  height: auto;
+  filter: invert();
+  margin-top: -400px;
+}
+.background{
+  height: 900px;
+  display: flex;
+  width: 50%;
+  margin-left: 50%;
+  background: url(img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -300px;
+  margin-top: -300px;
+}
+.divinfo{
+  height: 200px;
+  margin-top: 150px;
+  width: 40%;
+  margin-right: 50%;
+  margin-left: 6.5%;
+  border-left: solid 5px white ;
+  padding-left: 15px;
+}
+.divinfo__saludo{
+  margin-bottom: 7px;
+}
+.divinfo__name{
+  margin-bottom: 7px;
+}
+.divinfo__work{
+  margin-bottom: 15px;
+}
+.divinfo__boton{
+  border: solid 3px black;
+  color: #FFF;
+  background:-webkit-linear-gradient(black,red);
+  height: 40px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
